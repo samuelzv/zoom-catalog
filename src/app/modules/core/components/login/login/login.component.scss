@@ -1,0 +1,18 @@
+:host {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  width: 50%;
+}
+
+.errors-list {
+  padding-top: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}

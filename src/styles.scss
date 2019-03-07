@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+@import "reset";
+
+.generic-container {
+  padding: 0 25px;
+}
+
+  .generic-container--centered {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+.generic-page-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+

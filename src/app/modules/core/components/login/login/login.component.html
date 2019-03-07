@@ -1,0 +1,30 @@
+<div class="generic-container generic-container--centered">
+  <h1 class="generic-page-title">Login</h1>
+  <mat-card class="login">
+      <mat-card-header>
+        <mat-card-subtitle>Please provide your credentials</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" #f="ngForm">
+          <mat-form-field>
+            <input matInput type="text" autocomplete="off" formControlName="username" placeholder="Username" required>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput type="password" autocomplete="off" formControlName="password" placeholder="Password" required>
+          </mat-form-field>
+          <div>
+            <button [disabled]="!f.valid" mat-raised-button type="submit">Login</button>
+          </div>
+          <mat-chip-list class="errors-list">
+            <mat-chip color="accent" *ngFor="let error of errors; let idx = index"
+                      [selected]="true"
+                      [removable]="true"
+                      (removed)="removeError(idx)">
+              {{error}}
+              <mat-icon matChipRemove>cancel</mat-icon>
+            </mat-chip>
+          </mat-chip-list>
+        </form>
+      </mat-card-content>
+  </mat-card>
+</div>
