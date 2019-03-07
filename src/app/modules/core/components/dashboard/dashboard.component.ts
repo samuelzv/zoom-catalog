@@ -1,6 +1,9 @@
 import {Component} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {MatDialog, MatDialogRef} from '@angular/material';
+import {
+  ActivatedRoute,
+  Router
+} from '@angular/router';
+import {MatDialog} from '@angular/material';
 
 import {NotImplementedYetComponent} from '../../../shared/components/not-implemented-yet/not-implemented-yet.component';
 import {UtilService} from '../../../shared/services/util.service';
@@ -11,7 +14,6 @@ import {UtilService} from '../../../shared/services/util.service';
 	styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
-  snackBarRef = null;
 
 	constructor(
     private activatedRoute: ActivatedRoute,
@@ -28,12 +30,6 @@ export class DashboardComponent {
   showNotImplemented(): void {
     const dialogRef = this.dialog.open(NotImplementedYetComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.router.navigate(['/login']);
-    });
+    dialogRef.afterClosed().subscribe(_ => this.router.navigate(['/login']));
   }
-
-
-
 }

@@ -9,19 +9,12 @@ import {
 	MatCardModule,
   MatChipsModule,
 	MatDialogModule,
-	MatDividerModule,
 	MatInputModule,
 	MatIconModule,
-	MatGridListModule,
 	MatListModule,
-	MatRadioModule,
 	MatSidenavModule,
 	MatTableModule,
 	MatToolbarModule,
-	MatProgressBarModule,
-	MatSnackBarModule,
-	MatSelectModule,
-	MatStepperModule,
 	MAT_LABEL_GLOBAL_OPTIONS
 } from '@angular/material';
 
@@ -32,20 +25,13 @@ const MODULES = [
 	MatCardModule,
   MatChipsModule,
 	MatDialogModule,
-	MatDividerModule,
 	MatFormFieldModule,
 	MatInputModule,
 	MatIconModule,
-	MatGridListModule,
 	MatListModule,
-	MatProgressBarModule,
-	MatRadioModule,
 	MatSidenavModule,
 	MatTableModule,
-	MatToolbarModule,
-	MatSnackBarModule,
-	MatSelectModule,
-	MatStepperModule
+	MatToolbarModule
 ];
 
 @NgModule({

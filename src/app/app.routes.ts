@@ -1,4 +1,5 @@
 import {Routes} from '@angular/router';
+
 import {LoginComponent} from './modules/core/components/login/login/login.component';
 import {DashboardComponent} from './modules/core/components/dashboard/dashboard.component';
 

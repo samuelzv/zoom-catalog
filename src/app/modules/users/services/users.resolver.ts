@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Resolve} from '@angular/router';
 
 import {UsersService} from './users.service';

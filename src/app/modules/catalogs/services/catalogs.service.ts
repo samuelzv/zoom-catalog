@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
-
 import {
   HttpClient,
   HttpHeaders
@@ -18,16 +17,11 @@ const httpOptions = {
 
 @Injectable()
 export class CatalogsService {
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {}
 
-  getCatalog(id: number): Observable<ICatalog[]> {
+  getCatalog(id: number): Observable<ICatalog> {
     const url = `${environment.servicesURL}/photos/${id}`;
 
-    return this.http.get<ICatalog[]>(url, httpOptions);
+    return this.http.get<ICatalog>(url, httpOptions);
   }
-  getRandomNumber(maxNumber: number = 200): number {
-    return Math.floor(Math.random() * maxNumber) + 1;
-  }
-
 }
