@@ -1,27 +1,18 @@
-# ZoomCatalog
+# ZOOMcatalog Front-End challenging
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+## Instructions
 
-## Development server
+1. Create a web application using Angular 2+ and Angular Material (If you do not have experience with Material, use other module to replace it) to create a very simple login, when I send the username “admin” and password “admin” the application must display a dashboard with header, menu, and content area; In the menu component there should be 3 options: “Users”, “Catalogs” and “Flyers”.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+There are some considerations and behaviors:
 
-## Code scaffolding
+When “Users” is clicked in the content area must display what this service response https://jsonplaceholder.typicode.com/users 
+When “Catalogs” is clicked in the content area must display a random image from this service https://jsonplaceholder.typicode.com/photos/<RANDOM_PHOTO_ID>
+When “Flyers” is clicked must display a popup with the text “Not implemented yet” and return to the login form.
+The whole application should not be more than 1mb after compiling it
+Use the best strategy to build this exercise. Do not waste time in design, we are going to focus in functionality and best practices of programming ;)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Demo result
+https://samuelzv.github.io/zoom-catalog
+User: **admin**
+Password: **admin**
