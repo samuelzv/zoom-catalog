@@ -14,5 +14,7 @@ Use the best strategy to build this exercise. Do not waste time in design, we ar
 
 ## Demo result
 https://samuelzv.github.io/zoom-catalog
+
 User: **admin**
+
 Password: **admin**
